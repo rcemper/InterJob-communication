@@ -18,9 +18,8 @@ in a hang loop to scan a common global 
 and work independently of any disk access.  
    
 To try it log into a terminal     
- .    DO ##class(IJC.Demo).%Start()        
-The Highlander principle applies for this example: There can only be one     
-            
+.    DO ##class(IJC.Demo).%Start()        
+The Highlander principle applies for this example: __There can only be one__                 
 Next open a new terminal and run    
 .    DO ##class(IJC.Demo).Sensor("mytext")      
 and see what happens.     
