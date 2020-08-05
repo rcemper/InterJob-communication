@@ -30,3 +30,4 @@ It's clear that for real applications:
 - the sensors will do something useful.     
 But this reduces visibility. 
  
+[Article in DC](https://community.intersystems.com/post/global-scanning-slicing)
