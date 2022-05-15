@@ -26,3 +26,6 @@ It's clear that for real applications:
 But this reduces visibility. 
  
 [Article in DC](https://community.intersystems.com/post/using-interjob-communication-ijc)
+
+[Demo Server SMP](https://jdate.community.intersystems.com/csp/sys/UtilHome.csp)   
+[Demo Server WebTerminal](https://jdate.community.intersystems.com/terminal/)   
