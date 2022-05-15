@@ -35,7 +35,7 @@ ClassMethod Sensor(txt As %String = {$J}) as %Status
     use ijc write msg
     close ijc    ;release connection
     if $e(msg,1,4)="STOP" quit
-    hang hang
+    hang hng1
     }
    quit $$$OK
 }
