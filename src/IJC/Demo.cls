@@ -11,7 +11,7 @@ ClassMethod %Start() As %Status
    set msg="IJC Listener "_ijc_$s($t:"",1:"already")_" active"
    write msg,!
    else  set sc=$system.Status.Error(77,msg) quit sc
-   set stop=0
+#;   set stop=0
    for  {
        use ijc read pushmsg use 0 write pushmsg,!
        if $e(pushmsg,1,4)="STOP" quit
@@ -20,7 +20,7 @@ ClassMethod %Start() As %Status
 }
  
 /// simulation of a random writing sensor
-ClassMethod Sensor(txt As %String = {$J})
+ClassMethod Sensor(txt As %String = {$J}) as %Status
 {
    set ijc=..#Listener+1
    for  {
@@ -30,8 +30,8 @@ ClassMethod Sensor(txt As %String = {$J})
         hang 0.3
         continue
         }
-    set hang=$r(100)+1/10_"sec"
-        ,msg=txt_" "_$zdt($now(),3,,3)_" hang "_hang
+    set hng1=$r(100)+1/10_"sec"
+        ,msg=txt_" "_$zdt($now(),3,,3)_" hang "_hng1
     use ijc write msg
     close ijc    ;release connection
     if $e(msg,1,4)="STOP" quit
@@ -40,6 +40,6 @@ ClassMethod Sensor(txt As %String = {$J})
    quit $$$OK
 }
  
-ClassMethod STOP()
+ClassMethod STOP() as %String
 {   quit ..Sensor("STOP") }
 }
