@@ -29,3 +29,6 @@ But this reduces visibility.
 
 [Demo Server SMP](https://ijc.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
 [Demo Server WebTerminal](https://ijc.demo.community.intersystems.com/terminal/)   
+        
+**Code Quality**   
+<img width="85%" src="https://openexchange.intersystems.com/mp/img/packages/1866/screenshots/hij8xqxcpnjhttjjcsftm8vxf1y.jpg">
