@@ -1,3 +1,5 @@
+<img src="https://community.intersystems.com/sites/default/files/inline/images/archived.gif" width=100></img>
+<b>&nbsp;no maintenance or update</b>  
 
 Earlier I've written about command pipes.  
 This is the internal variant of a PIPE.  
